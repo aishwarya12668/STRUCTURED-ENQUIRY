@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <h2>Faculty Dashboard</h2>
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+</div>
+<div class="dashboard-container">
+    <div class="option-card">
+        <div class="icon">👨‍🎓</div>
+        <h2>Add Student</h2>
+        <p>Register new students</p>
+        <a href="/addStudentPage">
+            <button>Open</button>
+        </a>
+    </div>
+    <div class="option-card">
+        <div class="icon">📝</div>
+        <h2>Upload Marks</h2>
+        <p>Add  Subject Marks</p>
+        <a href="/uploadMarksPage">
+            <button>Open</button>
+        </a>
+    </div>
+     <div class="option-card">
+        <div class="icon">✏️</div>
+        <h2>Update Marks</h2>
+        <p>Modify Existing Marks</p>
+        <a href="/updateMarksPage">
+            <button>Open</button>
+        </a>
+    </div>
+</div>
+<div class="student-card">
+    <h3>All Students</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>USN</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+</div>
+<script src="/js/faculty.js"></script>
+</body>
+</html>
