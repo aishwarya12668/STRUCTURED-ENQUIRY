@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Marks</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <button class="nav-btn" onclick="window.location.href='/faculty'">
+        ← Back
+    </button>
+    <h2>Update Student Marks</h2>
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+
+</div>
+<div class="form-card">
+    <h2>Edit Existing Marks</h2>
+    <input type="number" id="sid" placeholder="Student ID">
+
+    <select id="sub1">
+        <option value="">
+            Select Subject 1
+        </option>
+
+        <option value="Java">
+            Java
+        </option>
+
+        <option value="DBMS">
+            DBMS
+        </option>
+
+        <option value="DS">
+            DS
+        </option>
+
+    </select>
+
+    <input type="number" id="s1ia1" placeholder="Updated IA1">
+    <input type="number" id="s1ia2" placeholder="Updated IA2">
+    <hr>
+
+    <select id="sub2">
+        <option value="">
+            Select Subject 2
+        </option>
+
+        <option value="Java">
+            Java
+        </option>
+
+        <option value="DBMS">
+            DBMS
+        </option>
+
+        <option value="DS">
+            DS
+        </option>
+    </select>
+    <input type="number" id="s2ia1" placeholder="Updated IA1">
+    <input type="number" id="s2ia2" placeholder="Updated IA2">
+    <hr>
+    <select id="sub3">
+        <option value="">
+            Select Subject 3
+        </option>
+
+        <option value="Java">
+            Java
+        </option>
+
+        <option value="DBMS">
+            DBMS
+        </option>
+
+        <option value="DS">
+            DS
+        </option>
+
+    </select>
+
+    <input type="number" id="s3ia1" placeholder="Updated IA1">
+    <input type="number" id="s3ia2" placeholder="Updated IA2">
+    <button onclick="updateMarks()">
+        Update Marks
+    </button>
+</div>
+<script src="/js/updateMarks.js"></script>
+</body>
+</html>
