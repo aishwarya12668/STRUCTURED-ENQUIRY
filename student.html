@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <h2>Student Dashboard</h2>
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+
+</div>
+<div class="student-card">
+    <h3>Your Marks</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>IA1</th>
+                <th>IA2</th>
+            </tr>
+        </thead>
+        <tbody id="marksTable">
+        </tbody>
+    </table>
+</div>
+<script src="/js/student.js"></script>
+</body>
+</html>
