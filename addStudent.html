@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Student</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="navbar">
+    <button class="nav-btn" onclick="window.location.href='/faculty'">
+     ← Back
+    </button>
+
+    <h2>Add Student</h2>
+    <button class="logout-btn" onclick="logout()">
+        Logout 
+    </button>
+</div>
+
+<div class="form-card">
+    <h2>Add New Student</h2>
+    <input type="text" id="usn" placeholder="USN">
+    <input type="text" id="name" placeholder="Name">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="addStudent()">
+        Add Student
+    </button>
+</div>
+<script src="/js/addStudent.js"></script>
+</body>
+</html>
